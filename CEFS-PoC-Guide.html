@@ -106,6 +106,13 @@ CEFS.ask("X + Y");  // Uses the new symbolic rule</code></pre>
       <a href="CEFS-v5.3.js" download class="nav-button">Download CEFS PoC JS</a>  
       <a href="https://denware.github.io/cefs/" class="nav-button">Back to Start &uarr;</a>
     </div>
+
+    <div class="note">
+        <h3>A Note on Implementation Strategy: The Pragmatic PoC</h3>
+        <p>The purest vision of CEFS is based on two highly ambitious principles: (1) "The Graph," where the code structure itself is the knowledge graph, and (2) "Fractal Control," where the computational process is driven by the graph's internal topology instead of external, imperative code.</p>
+        <p>A native implementation of these principles presents significant challenges. Therefore, the accompanying Proof of Concept (PoC) makes a <strong>conscious strategic decision</strong> to follow a more pragmatic path: a central <code>CEFS</code> "manager object" handles the knowledge graph and control logic. Thus, the system grows in a fractal-like manner but is not yet self-directed; the PoC is a precise simulation of a fractal-controlled system's behavior.</p>
+        <p>This approach allows for a clean and understandable demonstration of the core mathematical and logical model of CEFS. The task of future implementations will be to thoroughly develop and realize these deeper architectural principles in light of the original concept, thereby bringing the system's behavior closer to the pure theoretical model.</p>
+    </div>
     <hr style="margin-top:32px; color: #ccc; border:1px solid #ccc">
     <p>(c) 2025 Tamas Szots</p>
 </body>
