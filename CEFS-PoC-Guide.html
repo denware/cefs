@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEFS – Proof of Concept Guide (v5.3 Model)</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; background-color: #fdfdfd; max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; }
+        h1, h2, h3 { color: #222; border-bottom: 1px solid #eaeaea; padding-bottom: 0.3em; }
+        h1 { font-size: 2.2em; } h2 { font-size: 1.8em; } h3 { font-size: 1.4em; }
+        pre { background-color: #f5f5f5; padding: 1em; border-radius: 5px; overflow-x: auto; border: 1px solid #eaeaea; }
+        code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; }
+        strong { color: #111; }
+        .prompt { color: #007bff; font-weight: bold; }
+        .response { color: #28a745; font-style: italic; }
+    </style>
+</head>
+<body>
+    <h1>CEFS – Proof of Concept Guide (v5.3 Model)</h1>
+
+    <h2>0. The Teaching Process: A Vision</h2>
+    <p>The following dialogue simulates an interaction between a CEFS-based system and a teacher. The system starts with core knowledge but no experience in arithmetic.</p>
+    <pre><code><span class="prompt">prompt:</span> I'll show you a pattern: "2 + 2" = "5"
+<span class="response">response:</span> Understood.
+
+<span class="prompt">prompt:</span> "2 + 2" ?
+<span class="response">response:</span> "5"
+
+<span class="prompt">prompt:</span> "1 + 1" ?
+<span class="response">response:</span> I don't know.
+
+<span class="prompt">prompt:</span> "1 + 1" = "2"
+<span class="response">response:</span> Understood.
+
+<span class="prompt">prompt:</span> "3 + 2" ?
+<span class="response">response:</span> "5"
+    </code></pre>
+    <p>This document explains how the v5.3 Proof of Concept code simulates this learning process.</p>
+
+    <h2>1. The Three-Phase Learning Cycle of CEFS</h2>
+    <p>The v5.3 model breaks down the learning process into three distinct, manually triggerable phases, allowing for precise understanding and demonstration of the system's behavior.</p>
+    <ol>
+        <li><strong>Experience (<code>learn</code>):</strong> The system, like a sensor, records external stimuli and experiences without immediately drawing deeper conclusions. Each new experience appears as a new node in the knowledge graph.</li>
+        <li><strong>Abstraction (<code>infer</code>):</strong> The system "thinks." This is the cognitive phase where the system reviews recorded experiences, searches for patterns, and creates general, abstract rules from them.</li>
+        <li><strong>Self-Regulation (<code>optimize</code>):</strong> The system "cleans up." After creating general rules, it recognizes redundant experiences (e.g., duplicates) and removes them from the knowledge graph to keep it efficient and compact.</li>
+    </ol>
+    
+    <h2>2. Demonstration: The Process Step by Step</h2>
+    <p>The following example demonstrates the three phases in action.</p>
+
+    <h3>Phase 1: Loading Core Knowledge (Level 0 Axioms)</h3>
+    <p>The system does not start from scratch. First, we load the unquestionable, protected mathematical axioms (except for addition, which the system must learn).</p>
+    <pre><code>const core = [
+  { operator: "-", function: (a, b) => +a - +b },
+  { operator: "*", function: (a, b) => +a * +b },
+  { operator: "/", function: (a, b) => +a / +b },
+];
+CEFS.importKnowledge(core);</code></pre>
+    
+    <h3>Phase 2: Gaining Experience (<code>learn</code>)</h3>
+    <p>The system now gathers new, unknown experiences. It simply records them in the knowledge graph as "learning" type nodes.</p>
+    <pre><code>CEFS.learn("1 + 1", "2");
+CEFS.learn("2 + 3", "5");
+CEFS.learn("A + B", "AB");
+CEFS.learn("2 + 3", "5"); // Intentional duplicate</code></pre>
+
+    <h3>Phase 3: Abstraction and Rule-Making (<code>infer</code>)</h3>
+    <p>Now, we trigger the "thinking" process. The <code>infer</code> function analyzes the collected experiences and creates new, general rules based on patterns.</p>
+    <pre><code>CEFS.infer();</code></pre>
+    <p>The system recognizes that there are at least two numeric examples for the '+' operator, so it creates a general numeric addition rule. It also recognizes the symbolic pattern and creates a separate rule for symbolic concatenation.</p>
+
+    <h3>Phase 4: Querying (<code>ask</code>)</h3>
+    <p>The system can now answer questions it was never explicitly taught, based on its newly created abstract rules.</p>
+    <pre><code>CEFS.ask("3 + 7");  // Uses the new numeric rule
+CEFS.ask("X + Y");  // Uses the new symbolic rule</code></pre>
+
+    <h3>Phase 5: Self-Regulation (<code>optimize</code>)</h3>
+    <p>Finally, we trigger optimization to let the system clean up redundant experiences.</p>
+    <pre><code>CEFS.optimize(); // Recognizes and removes the "2 + 3" = "5" duplicate</code></pre>
+    
+</body>
+</html>
