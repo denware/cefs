@@ -60,13 +60,6 @@
         <li><strong>The Knowledge Hierarchy:</strong> Knowledge elements are not equal. They are organized into a multi-level hierarchy, from unquestionable axioms (Level 0) to transient, experimental experiences (Level 4).</li>
     </ul>
 
-    <div class="note">
-        <h3>A Note on Implementation Strategy: The Pragmatic PoC</h3>
-        <p>The purest vision of CEFS is based on two highly ambitious principles: (1) "The Graph," where the code structure itself is the knowledge graph, and (2) "Fractal Control," where the computational process is driven by the graph's internal topology instead of external, imperative code.</p>
-        <p>A native implementation of these principles presents significant challenges. Therefore, the accompanying Proof of Concept (PoC) makes a <strong>conscious strategic decision</strong> to follow a more pragmatic path: a central <code>CEFS</code> "manager object" handles the knowledge graph and control logic. Thus, the system grows in a fractal-like manner but is not yet self-directed; the PoC is a precise simulation of a fractal-controlled system's behavior.</p>
-        <p>This approach allows for a clean and understandable demonstration of the core mathematical and logical model of CEFS. The task of future implementations will be to thoroughly develop and realize these deeper architectural principles in light of the original concept, thereby bringing the system's behavior closer to the pure theoretical model.</p>
-    </div>
-
     <h2>3. The CEFS Equation of Motion: The Mathematical Model</h2>
     <p>The evolution of knowledge in CEFS can be described as a dynamic graph transformation system. The change in the system's state is summarized by the following "equation of motion":</p>
     \[ G_{t+1} = P(A(F(G_t, I_t))) \]
