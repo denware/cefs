@@ -8,7 +8,7 @@ CEFS is a new software architecture paradigm that treats knowledge and program l
 
 This project is best viewed through our GitHub Pages site, which properly renders all documents, including mathematical formulas.
 
-*   **[The Main Theoretical Framework (White Paper)](https://denware.github.io/cefs/)**
+*   **[The Main Theoretical Framework (White Paper)](https://denware.github.io/cefs/CEFS-WH.html)**
 *   **[The Detailed Mathematical Model](https://denware.github.io/cefs/CEFS-MATH.html)**
 *   **[Proof of Concept Guide](https://denware.github.io/cefs/CEFS-PoC-Guide.html)**
 
