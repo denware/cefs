@@ -21,6 +21,27 @@
         h3 { font-size: 1.4em; }
         .note { background-color: #f0f7ff; border-left: 5px solid #007bff; padding: 1em; margin: 1.5em 0; }
         code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; font-size: 0.9em; background-color: #f5f5f5; padding: 2px 4px; border-radius: 3px; }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eaeaea;
+        }
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white !important; /* Biztosítja, hogy a szöveg fehér legyen */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -69,6 +90,9 @@
     
     <h2>5. Conclusion</h2>
     <p>CEFS is a novel and promising paradigm that treats software systems not as rigid structures, but as living, adaptive knowledge ecosystems. Built on the principles of hierarchical control, fractal growth, and continuous self-organization, it offers a path to elegantly and effectively manage the complex challenges of modern software development. The successfully completed Proof of Concept demonstrates that the model is viable not only in theory but also in practice.</p>
-    
+    <!-- NAVIGATION -->
+    <div class="navigation" style="justify-content: flex-end;">
+      <a href="https://denware.github.io/cefs/CEFS-MATH.html" class="nav-button">Next: The Mathematical Model &rarr;</a>
+    </div>
 </body>
 </html>
