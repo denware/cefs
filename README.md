@@ -27,8 +27,9 @@ The project includes a runnable JavaScript Proof of Concept (PoC) file that demo
 3.  **Analyze the output:**
     The console output will show, step-by-step, the three-phase operation of CEFS: loading core knowledge (axioms), experiential learning (`learn`), abstraction (`infer`), and self-regulation (`optimize`).
 
-## Copyright
 
-Copyright (c) 2025 Tamas Szots
 
-All Rights Reserved.
+
+
+
+(c) 2025 Tamas Szots
