@@ -13,6 +13,27 @@
         strong { color: #111; }
         .prompt { color: #007bff; font-weight: bold; }
         .response { color: #28a745; font-style: italic; }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #eaeaea;
+        }
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white !important; /* Biztosítja, hogy a szöveg fehér legyen */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -77,6 +98,10 @@ CEFS.ask("X + Y");  // Uses the new symbolic rule</code></pre>
     <h3>Phase 5: Self-Regulation (<code>optimize</code>)</h3>
     <p>Finally, we trigger optimization to let the system clean up redundant experiences.</p>
     <pre><code>CEFS.optimize(); // Recognizes and removes the "2 + 3" = "5" duplicate</code></pre>
-    
+    <!-- NAVIGATION -->
+    <div class="navigation">
+      <a href="https://denware.github.io/cefs/CEFS-MATH.html" class="nav-button">&larr; Previous: The Mathematical Model</a>
+      <a href="https://denware.github.io/cefs/" class="nav-button">Back to Start &uarr;</a>
+    </div>
 </body>
 </html>
