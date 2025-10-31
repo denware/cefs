@@ -1,13 +1,13 @@
-<div style="border:2px solid #cc0000; background:#ffe6e6; color:#660000; padding:1em; border-radius:8px;">
-<b>Notice – Early Research Prototype</b><br><br>
-You are viewing an early <b>Proof of Concept (POC)</b> form of the <b>EMG – The EMERGENT GRAPH MODEL</b>.<br><br>
-The <b>CEFS</b> was the first conceptual experiment aiming to bring mathematical reasoning closer to the domain of programming and system design.
-Some initial ideas have since become outdated, while others — through several new theoretical directions — have rapidly evolved into a novel approach to
-self-developing, self-configuring, and self-learning systems.<br><br>
-Since this topic may overlap with dual-use research areas, the <b>EMG</b> will not be published publicly, even at the theoretical level.<br><br>
-For authorized closed discussion requests, contact:
-<a href="mailto:tamas.szots@gmail.com"><b>tamas.szots@gmail.com</b></a>
-</div>
+> ⚠️ **Early Research Prototype**
+>
+> You are viewing an early **POC** version of the **EMG – The EMERGENT GRAPH MODEL**.  
+> The **CEFS** was the first conceptual experiment connecting mathematical reasoning with system design.  
+> Some ideas have become outdated, others have evolved into a new approach to self-developing, self-configuring, and self-learning systems.  
+>
+> Because this topic may touch dual-use research areas, the **EMG** will not be publicly released even at a theoretical level.  
+>
+> For authorized inquiries: **[tamas.szots@gmail.com](mailto:tamas.szots@gmail.com)**
+
 
 # Controlled Emergent Fractal System (CEFS)
 
