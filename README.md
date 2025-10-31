@@ -4,7 +4,7 @@
 > The **CEFS** was the first conceptual experiment connecting mathematical reasoning with system design.  
 > Some ideas have become outdated, others have evolved into a new approach to self-developing, self-configuring, and self-learning systems.  
 >
-> Because this topic may touch dual-use research areas, the **EMG** will not be publicly released even at a theoretical level.  
+> Since this topic may overlap with **dual-use** research areas — and this is a matter of **human intent, not a technical** dead-end — the EMG will not be published publicly, even at the theoretical level. 
 >
 > If you hold the appropriate authorization and wish to request access for a closed discussion, please send your inquiry to:
 > **[tamas.szots@gmail.com](mailto:tamas.szots@gmail.com)**
