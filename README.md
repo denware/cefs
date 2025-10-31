@@ -6,7 +6,8 @@
 >
 > Because this topic may touch dual-use research areas, the **EMG** will not be publicly released even at a theoretical level.  
 >
-> For authorized inquiries: **[tamas.szots@gmail.com](mailto:tamas.szots@gmail.com)**
+> If you hold the appropriate authorization and wish to request access for a closed discussion, please send your inquiry to:
+> **[tamas.szots@gmail.com](mailto:tamas.szots@gmail.com)**
 
 
 # Controlled Emergent Fractal System (CEFS)
